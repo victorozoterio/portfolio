@@ -4,6 +4,34 @@ h4 {
     margin-bottom: 8px;
 }
 
+h2 {
+    font: var(--h2);
+    margin-bottom: 56px;
+}
+
+.title {
+    text-align: center;
+}
+
+.collection {
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 144px;
+
+    figure h3 {
+        font: var(--h3);
+        text-align: left;
+    }
+
+    figure p {
+        font: var(--text-sm);
+        color: var(--base-gray-500);
+        text-align: left;
+    }
+}
+
 #intro {
     display: flex;
     position: relative;
@@ -67,14 +95,14 @@ h4 {
         img {
             width: 24px;
             height: 24px;
-            margin-left: 6px;
+            margin-left: 8px;
         }
 
         p {
             font: var(--text-md);
             color: var(--base-gray-500);
-            padding-right: 16px;
-            margin-left: 6px;
+            padding-right: 12px;
+            margin-left: 8px;
         }
     }
 
@@ -91,51 +119,71 @@ h4 {
 }
 
 #projects {
-    justify-content: center;
     text-align: center;
 
     h4 {
         margin-top: 72px;
     }
 
-    h2 {
-        font: var(--h2);
-        margin-bottom: 56px;
-    }
-
-    #collection {
-        display: grid;
-        grid-template-columns: repeat(3, 330px);
-        justify-content: center;
-        gap: 24px;
+    .collection {
         margin-bottom: 144px;
     }
 
-    #collection div {
-        box-sizing: border-box;
+    .collection div {
         width: 330px;
         height: 280px;
         background-color: var(--base-gray-300);
         border-radius: 12px;
     }
 
-    #collection figure img {
+    .collection figure img {
         width: 306px;
         height: 156px;
         margin-top: 12px;
         border-radius: 8px;
     }
 
-    #collection figure h3 {
-        font: var(--h3);
-        text-align: left;
+    .collection figure h3 {
         margin: 24px 0px 8px 16px;
     }
 
-    #collection figure p {
-        font: var(--text-sm);
-        color: var(--base-gray-500);
-        text-align: left;
+    .collection figure p {
         margin: 0px 16px 20px 16px;
     }
+}
+
+#services {
+    h4 {
+        margin-top: 88px;
+    }
+
+    .collection div {
+        width: 280px;
+        height: 155px;
+        background-color: var(--base-gray-100);
+        border: 1px solid var(--base-gray-300);
+        border-radius: 12px;
+        margin-bottom: 120px;
+        justify-self: center;
+    }
+
+    .collection figure {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .collection figure img {
+        width: 48px;
+        height: 48px;
+        text-align: left;
+    }
+
+    .collection figure h3 {
+        margin-top: 20px;
+        margin-bottom: 8px;
+    }
+
+    .collection figure p {
+    }
+
 }

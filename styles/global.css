@@ -32,7 +32,7 @@
 
 body {
     color: var(--base-gray-600);
-    background-color: var(--base-gray-300);
+    background-color: var(--base-gray-200);
 }
 
 h1, h2, h3 {

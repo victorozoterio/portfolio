@@ -1,5 +1,6 @@
-h3 {
+h4 {
     font: var(--subtitle);
+    color: var(--base-gray-500);
     margin-bottom: 8px;
 }
 
@@ -42,6 +43,7 @@ h3 {
 
     p {
         font: var(--text-sm);
+        color: var(--base-gray-400);
     }
 
     #tecnologies {
@@ -70,6 +72,7 @@ h3 {
 
         p {
             font: var(--text-md);
+            color: var(--base-gray-500);
             padding-right: 16px;
             margin-left: 6px;
         }
@@ -84,5 +87,55 @@ h3 {
     #arrow img {
         width: 32px;
         height: 32px;
+    }
+}
+
+#projects {
+    justify-content: center;
+    text-align: center;
+
+    h4 {
+        margin-top: 72px;
+    }
+
+    h2 {
+        font: var(--h2);
+        margin-bottom: 56px;
+    }
+
+    #collection {
+        display: grid;
+        grid-template-columns: repeat(3, 330px);
+        justify-content: center;
+        gap: 24px;
+        margin-bottom: 144px;
+    }
+
+    #collection div {
+        box-sizing: border-box;
+        width: 330px;
+        height: 280px;
+        background-color: var(--base-gray-300);
+        border-radius: 12px;
+    }
+
+    #collection figure img {
+        width: 306px;
+        height: 156px;
+        margin-top: 12px;
+        border-radius: 8px;
+    }
+
+    #collection figure h3 {
+        font: var(--h3);
+        text-align: left;
+        margin: 24px 0px 8px 16px;
+    }
+
+    #collection figure p {
+        font: var(--text-sm);
+        color: var(--base-gray-500);
+        text-align: left;
+        margin: 0px 16px 20px 16px;
     }
 }

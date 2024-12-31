@@ -43,3 +43,11 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+.red {
+    color: var(--main-red);
+}
+
+.purple {
+    color: var(--main-purple);
+}
